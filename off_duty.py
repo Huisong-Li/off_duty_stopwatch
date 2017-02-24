@@ -3,6 +3,7 @@
 # Date  : 02/10/2017
 
 from datetime import datetime
+import os
 
 def fill(number):
     return str(number).zfill(2)
@@ -30,6 +31,7 @@ def set_time():
                     hour      , minute     , second)
 
 def main():
+    os.system('cls')
     try:
         count(set_time())
     except KeyboardInterrupt:
